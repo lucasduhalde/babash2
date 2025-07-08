@@ -1,0 +1,7 @@
+/* ===== FOOTER SECTION ===== */
+.footer {
+  background: #0a0a0a;
+  color: var(--white);
+  text-align: center;
+  padding: 30px 0;
+}

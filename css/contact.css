@@ -1,0 +1,149 @@
+/* ===== CONTACT SECTION ===== */
+.contact {
+  padding: var(--section-padding);
+  background: var(--bg-dark);
+  color: var(--white);
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  text-align: center;
+  padding: 50px 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.contact-card h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.contact-card p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.phone-number {
+  margin-bottom: 30px;
+}
+
+.phone-link {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-yellow);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+  transition: var(--transition);
+}
+
+.phone-link:hover {
+  color: var(--secondary-yellow);
+  transform: scale(1.05);
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.contact-btn {
+  padding: 15px 30px;
+  border-radius: var(--border-radius-large);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.call-btn {
+  background: var(--gradient-blue);
+  color: var(--white);
+}
+
+.whatsapp-btn {
+  background: var(--gradient-yellow);
+  color: var(--primary-blue);
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px var(--shadow-heavy);
+}
+
+.availability {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: var(--border-radius-small);
+  margin-top: 20px;
+}
+
+.availability p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.contact-benefits {
+  padding: 40px;
+}
+
+.contact-benefits h4 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: var(--white);
+  text-align: center;
+}
+
+.contact-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-benefits li {
+  padding: 15px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-benefits li:last-child {
+  border-bottom: none;
+}
+
+/* ===== RESPONSIVE CONTACT ===== */
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .phone-link {
+    font-size: 2rem;
+  }
+}
