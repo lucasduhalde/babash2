@@ -1,7 +1,7 @@
 {
   "builds": [
     {
-      "src": "index-modular.html",
+      "src": "index.html",
       "use": "@vercel/static"
     }
   ]
