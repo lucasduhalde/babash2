@@ -29,6 +29,42 @@
   z-index: 1;
 }
 
+.logo-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: slideInUp 1s ease-out 0.1s both;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.logo-text .ba {
+  color: var(--primary-blue);
+}
+
+.logo-text .bash {
+  color: var(--primary-yellow);
+}
+
+.hero-logo {
+  margin-bottom: 30px;
+  animation: slideInUp 1s ease-out 0.1s both;
+}
+
+.logo-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.logo-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
 .hero h1 {
   font-size: 3.5rem;
   margin-bottom: 20px;
@@ -71,5 +107,13 @@
 
   .hero p {
     font-size: 1.1rem;
+  }
+
+  .logo-text {
+    font-size: 2rem;
+  }
+
+  .logo-image {
+    max-width: 150px;
   }
 }
