@@ -47,6 +47,10 @@
   color: var(--primary-yellow);
 }
 
+.logo-text .h-blue {
+  color: var(--primary-blue);
+}
+
 .hero-logo {
   margin-bottom: 30px;
   animation: slideInUp 1s ease-out 0.1s both;
