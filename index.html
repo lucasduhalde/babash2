@@ -10,8 +10,16 @@
     />
     <link rel="canonical" href="https://babash.cl/" />
 
-    <!-- ===== FAVICON ACTUAL ===== -->
-    <link rel="icon" type="image/png" href="img/Ventana.png" />
+    <!-- ===== FAVICON (monograma bb) ===== -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+
+    <!-- ===== TIPOGRAFÍA ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    />
 
     <!-- ===== OPEN GRAPH (WhatsApp, Facebook, LinkedIn) ===== -->
     <meta property="og:type" content="website" />
@@ -56,178 +64,577 @@
     <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
-    <!-- ===== HERO SECTION ===== -->
-    <section class="hero gradient-bg">
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
       <div class="container">
-        <h1 class="logo-text">
-          <span class="ba">BA</span><span class="bash">BAS</span
-          ><span class="h-blue">H</span>
-        </h1>
-        <p>
-          Somos dos jóvenes apasionados por el derecho y la tecnología,
-          dispuestos a enfrentar cualquier desafío
-        </p>
-        <a href="#contacto" class="cta-button">Comenzar Ahora</a>
+        <a href="#" class="logo" aria-label="Babash, inicio">
+          <span class="logo-mark" aria-hidden="true">b<span>b</span></span>
+          <span class="logo-text">ba<span class="bash">bash</span></span>
+        </a>
+        <nav class="site-nav">
+          <a href="#servicios">Servicios</a>
+          <a href="#para-quien">Para quién</a>
+          <a href="#equipo">Equipo</a>
+          <a href="#contacto" class="btn btn--sm">Hablemos</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-copy">
+          <p class="eyebrow">Asesoría legal y estratégica · Chile</p>
+          <h1>Tu empresa, bien constituida desde el día uno.</h1>
+          <p class="hero-sub">
+            Constitución de sociedades, contratos, marcas y levantamiento de
+            capital para startups, artistas e industrias creativas.
+          </p>
+          <div class="hero-actions">
+            <a href="#contacto" class="btn btn--primary"
+              >Agenda tu consulta gratuita</a
+            >
+            <a href="#servicios" class="btn btn--ghost">
+              Ver servicios
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14" />
+                <path d="m13 6 6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+          <ul class="checklist hero-trust">
+            <li>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Consulta inicial gratuita
+            </li>
+            <li>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Respuesta en menos de 24 horas
+            </li>
+            <li>
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Sin compromisos
+            </li>
+          </ul>
+        </div>
+
+        <aside class="hero-aside">
+          <div class="card process">
+            <h2>Cómo trabajamos</h2>
+            <ol>
+              <li>
+                <span class="process-num">1</span>
+                <div>
+                  <h3>Diagnóstico</h3>
+                  <p>
+                    Una conversación para entender el proyecto y sus riesgos
+                    reales.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="process-num">2</span>
+                <div>
+                  <h3>Propuesta personalizada</h3>
+                  <p>Alcance, plazos y valor por escrito, sin letra chica.</p>
+                </div>
+              </li>
+              <li>
+                <span class="process-num">3</span>
+                <div>
+                  <h3>Ejecución y acompañamiento</h3>
+                  <p>Nos quedamos después de la firma, no sólo hasta ella.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <a
+            href="https://wa.me/56933242695?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios%20de%20consultoría"
+            target="_blank"
+            rel="noopener"
+            class="hero-phone"
+          >
+            <span>
+              <small>Escríbenos directo</small>
+              <strong>+56 9 3324 2695</strong>
+            </span>
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3.5 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5Z" />
+            </svg>
+          </a>
+        </aside>
       </div>
     </section>
 
-    <!-- ===== SERVICES SECTION ===== -->
-    <section class="services">
+    <!-- ===== SERVICIOS ===== -->
+    <section class="services" id="servicios">
       <div class="container">
-        <h2 class="section-title">Nuestros Servicios</h2>
+        <div class="section-head">
+          <p class="eyebrow">Servicios</p>
+          <h2 class="section-title">
+            Tres frentes que definen si un proyecto sobrevive
+          </h2>
+        </div>
         <div class="services-grid">
-          <div class="service-card">
-            <div class="service-icon">📊</div>
-            <h3>Constitución y Desarrollo de Sociedades</h3>
+          <article class="card service-card reveal">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 21h18" />
+              <path d="M4 21V10l8-5 8 5v11" />
+              <path d="M9 21v-6h6v6" />
+            </svg>
+            <h3>Constitución y desarrollo de sociedades</h3>
             <p>
               Te acompañamos desde la idea hasta la formalización legal de tu
-              empresa. Diseñamos la estructura societaria ideal para tu
-              proyecto, considerando beneficios tributarios, protección
-              patrimonial y escalabilidad futura. Tu empresa lista para crecer
-              desde el día uno.
+              empresa. Diseñamos la estructura societaria ideal considerando
+              beneficios tributarios, protección patrimonial y escalabilidad
+              futura.
             </p>
-          </div>
+            <ul class="service-tags">
+              <li>SpA y Ltda.</li>
+              <li>Pactos de accionistas</li>
+              <li>Vesting</li>
+            </ul>
+          </article>
 
-          <div class="service-card">
-            <div class="service-icon">⚖️</div>
-            <h3>Asesoría Legal Integral</h3>
+          <article class="card service-card reveal">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 3v18" />
+              <path d="M5 7h14" />
+              <path d="m5 7-3 7h6Z" />
+              <path d="m19 7-3 7h6Z" />
+              <path d="M8 21h8" />
+            </svg>
+            <h3>Asesoría legal integral</h3>
             <p>
-              Protección completa para tu emprendimiento: constitución
-              empresarial, contratos comerciales, registro de marcas, propiedad
-              intelectual y cumplimiento normativo. Blindamos tu negocio
-              mientras te enfocas en innovar.
+              Protección completa para tu emprendimiento: contratos comerciales,
+              registro de marcas, propiedad intelectual y cumplimiento
+              normativo. Blindamos tu negocio mientras te enfocas en innovar.
             </p>
-          </div>
-          <div class="service-card">
-            <div class="service-icon">💰</div>
-            <h3>Financiamiento y Levantamiento de Capital</h3>
+            <ul class="service-tags">
+              <li>Contratos</li>
+              <li>Marcas INAPI</li>
+              <li>Propiedad intelectual</li>
+            </ul>
+          </article>
+
+          <article class="card service-card reveal">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M3 17.5 9 11l4 4 8-8" />
+              <path d="M15 7h6v6" />
+            </svg>
+            <h3>Financiamiento y levantamiento de capital</h3>
             <p>
-              Preparamos tu negocio para inversores: pitch decks, due diligence,
-              estructuración de rondas de inversión y acceso a fondos
-              concursables. Conectamos tu proyecto con las oportunidades de
-              financiamiento que necesitas para escalar.
+              Preparamos tu negocio para inversionistas: pitch decks, due
+              diligence, estructuración de rondas y acceso a fondos concursables.
+              Conectamos tu proyecto con el financiamiento que necesita para
+              escalar.
             </p>
-          </div>
+            <ul class="service-tags">
+              <li>Due diligence</li>
+              <li>Rondas</li>
+              <li>Fondos públicos</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== TARGET AUDIENCE SECTION ===== -->
-    <section class="target-audience">
+    <!-- ===== PARA QUIÉN TRABAJAMOS ===== -->
+    <section class="target-audience" id="para-quien">
       <div class="container">
-        <h2 class="section-title">¿Para Quién Trabajamos?</h2>
+        <div class="section-head">
+          <p class="eyebrow eyebrow--plain">Para quién trabajamos</p>
+          <h2 class="section-title">
+            Gente que construye algo y necesita que aguante
+          </h2>
+        </div>
         <div class="audience-grid">
-          <div class="audience-card">
-            <div class="audience-icon">🚀</div>
+          <article class="audience-card reveal">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 3c3.5 2.6 5.2 6 5.2 9.6L12 18l-5.2-5.4C6.8 9 8.5 5.6 12 3Z" />
+              <circle cx="12" cy="11" r="2" />
+              <path d="M9 19.5 7.5 22" />
+              <path d="m15 19.5 1.5 2.5" />
+            </svg>
             <h3>Startups</h3>
             <p>
               Emprendimientos tecnológicos que necesitan estructuración legal y
               estratégica desde el MVP hasta el escalamiento.
             </p>
-          </div>
-          <div class="audience-card">
-            <div class="audience-icon">🎭</div>
-            <h3>Artistas y Creativos</h3>
+          </article>
+
+          <article class="audience-card reveal">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="13.5" cy="6.5" r="2.5" />
+              <circle cx="6" cy="12" r="2.5" />
+              <circle cx="16" cy="16" r="2.5" />
+              <path d="M11.4 8.1 8.2 10.6" />
+              <path d="m8.2 13.6 5.4 2" />
+            </svg>
+            <h3>Artistas y creativos</h3>
             <p>
               Músicos, diseñadores, escritores y creadores que buscan
               profesionalizar y monetizar su talento.
             </p>
-          </div>
-          <div class="audience-card">
-            <div class="audience-icon">💼</div>
-            <h3>Empresas Emergentes</h3>
+          </article>
+
+          <article class="audience-card reveal">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="7" width="18" height="13" rx="2" />
+              <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2" />
+              <path d="M3 12h18" />
+            </svg>
+            <h3>Empresas emergentes</h3>
             <p>
               Negocios en crecimiento que requieren asesoría legal y tecnológica
               para su expansión y consolidación.
             </p>
-          </div>
-          <div class="audience-card">
-            <div class="audience-icon">🎪</div>
-            <h3>Industrias Creativas</h3>
+          </article>
+
+          <article class="audience-card reveal">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2.5" y="5" width="19" height="14" rx="2" />
+              <path d="M7 5v14" />
+              <path d="M17 5v14" />
+              <path d="M2.5 12h19" />
+            </svg>
+            <h3>Industrias creativas</h3>
             <p>
               Productoras, agencias creativas y empresas del entretenimiento que
               necesitan soporte legal y estratégico.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== ABOUT SECTION ===== -->
-    <section class="about">
+    <!-- ===== EQUIPO ===== -->
+    <section class="about" id="equipo">
       <div class="container">
-        <h2 class="section-title">Nuestro Equipo</h2>
+        <div class="about-intro">
+          <p class="eyebrow">Equipo</p>
+          <h2 class="section-title">Dos personas, no un call center</h2>
+          <p class="section-lead">
+            Somos dos jóvenes apasionados por el derecho y la tecnología,
+            dispuestos a enfrentar cualquier desafío. Hablas siempre con quien
+            hace el trabajo.
+          </p>
+        </div>
         <div class="about-content">
-          <div class="profile-card">
-            <div class="profile-avatar">⚖️</div>
-            <h3>Abogado Especialista</h3>
+          <article class="card profile-card reveal">
+            <div class="profile-avatar" aria-hidden="true">[ ]</div>
+            <div>
+              <h3>[NOMBRE APELLIDO]</h3>
+              <p class="profile-role">Abogado</p>
+            </div>
             <p>
-              Experto en derecho empresarial, propiedad intelectual y contratos
-              tecnológicos. Especializado en startups e industrias creativas
+              Derecho empresarial, propiedad intelectual y contratos
+              tecnológicos, con foco en startups e industrias creativas.
             </p>
-          </div>
-          <div class="profile-card">
-            <div class="profile-avatar">📊</div>
-            <h3>Ingeniero Civil Industrial</h3>
+          </article>
+
+          <article class="card profile-card reveal">
+            <div class="profile-avatar" aria-hidden="true">[ ]</div>
+            <div>
+              <h3>[NOMBRE APELLIDO]</h3>
+              <p class="profile-role">Ingeniero civil industrial</p>
+            </div>
             <p>
-              Especialista en desarrollo de producto, levantamiento de capital y
-              optimización de procesos. Enfoque en escalamiento de startups y
-              gestión de proyectos creativos.
+              Desarrollo de producto, levantamiento de capital y optimización de
+              procesos, con foco en escalamiento y gestión de proyectos
+              creativos.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ===== CONTACT SECTION ===== -->
+    <!-- ===== CONTACTO ===== -->
     <section class="contact" id="contacto">
       <div class="container">
-        <h2 class="section-title">Hablemos de tu Proyecto</h2>
-        <div class="contact-info">
-          <div class="contact-card">
-            <div class="contact-icon">📱</div>
-            <h3>Contáctanos Directamente</h3>
-            <p>
-              Llámanos o envíanos un WhatsApp para una consulta inicial gratuita
-            </p>
-            <div class="phone-number">
-              <a href="tel:+56933242695" class="phone-link">+56 9 33242695</a>
-            </div>
-            <div class="contact-buttons">
-              <a href="tel:+56933242695" class="contact-btn call-btn"
-                >📞 Llamar</a
+        <div class="contact-intro">
+          <p class="eyebrow">Contacto</p>
+          <h2 class="section-title">Hablemos de tu proyecto</h2>
+          <p class="section-lead">
+            Llámanos o escríbenos por WhatsApp. La primera conversación es
+            gratuita y sin compromiso.
+          </p>
+          <ul class="checklist contact-benefits">
+            <li>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
               >
-              <a
-                href="https://wa.me/56933242695?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios%20de%20consultoría"
-                target="_blank"
-                class="contact-btn whatsapp-btn"
-                >💬 WhatsApp</a
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Consulta inicial gratuita
+            </li>
+            <li>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
               >
-            </div>
-            <div class="availability">
-              <p><strong>Horario de atención:</strong></p>
-              <p>Lunes a Domingo: 9:00 - 18:00</p>
-            </div>
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Respuesta en menos de 24 horas
+            </li>
+            <li>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Propuesta personalizada
+            </li>
+            <li>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 6 9 17l-5-5" />
+              </svg>
+              Sin compromisos
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-card">
+          <div>
+            <small>Teléfono y WhatsApp</small>
+            <a href="tel:+56933242695" class="phone-link">+56 9 3324 2695</a>
           </div>
-          <div class="contact-benefits">
-            <h4>¿Por qué contactarnos?</h4>
-            <ul>
-              <li>✅ Consulta inicial gratuita</li>
-              <li>✅ Respuesta en menos de 24 horas</li>
-              <li>✅ Propuesta personalizada</li>
-              <li>✅ Sin compromisos</li>
-            </ul>
+          <div class="contact-buttons">
+            <a href="tel:+56933242695" class="btn btn--blue contact-btn call-btn">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 5.5 5.5L16 12l4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3Z" />
+              </svg>
+              Llamar
+            </a>
+            <a
+              href="https://wa.me/56933242695?text=Hola%2C%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios%20de%20consultoría"
+              target="_blank"
+              rel="noopener"
+              class="btn btn--primary contact-btn whatsapp-btn"
+            >
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3.5 20.5l1.7-5A8.5 8.5 0 1 1 21 11.5Z" />
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+          <div class="availability">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path d="M12 7v5l3.2 1.9" />
+            </svg>
+            <div>
+              <strong>Lunes a domingo, 9:00 – 18:00</strong>
+              <span
+                >Fuera de horario, deja tu mensaje y respondemos al día
+                siguiente.</span
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== FOOTER SECTION ===== -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
       <div class="container">
+        <span class="logo logo--on-dark">
+          <span class="logo-mark" aria-hidden="true">b<span>b</span></span>
+          <span class="logo-text">ba<span class="bash">bash</span></span>
+        </span>
         <p>
-          &copy; 2025 Babash. Transformando ideas en realidades legales y
-          estratégicas.
+          &copy; 2025 Babash · Transformando ideas en realidades legales y
+          estratégicas
         </p>
       </div>
     </footer>

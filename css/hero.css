@@ -1,111 +1,302 @@
-/* ===== HERO SECTION ===== */
-.gradient-bg {
-  background: var(--gradient-primary);
-  position: relative;
-  overflow: hidden;
+/* ===== LOGO (wordmark + monograma) ===== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
 }
 
-.gradient-bg::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.1) 1px,
-    transparent 1px
-  );
-  background-size: 50px 50px;
-  animation: float 20s linear infinite;
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.0625rem;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #fff;
 }
 
-.hero {
-  padding: 100px 0;
-  text-align: center;
-  color: var(--white);
-  position: relative;
-  z-index: 1;
+.logo-mark span {
+  color: var(--amber);
 }
 
 .logo-text {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: slideInUp 1s ease-out 0.1s both;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
-.logo-text .ba {
-  color: var(--primary-blue);
+  font-size: 1.375rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1;
+  color: var(--brand-blue);
 }
 
 .logo-text .bash {
-  color: var(--primary-yellow);
+  color: var(--amber);
 }
 
-.logo-text .h-blue {
-  color: var(--primary-blue);
+/* Sobre fondo oscuro la primera sílaba pasa a blanco */
+.logo--on-dark .logo-mark {
+  background: rgba(255, 255, 255, 0.09);
 }
 
-.hero-logo {
-  margin-bottom: 30px;
-  animation: slideInUp 1s ease-out 0.1s both;
+.logo--on-dark .logo-text {
+  color: #fff;
 }
 
-.logo-image {
-  max-width: 200px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  transition: var(--transition);
+/* ===== BARRA DE NAVEGACIÓN ===== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 72px;
+  border-bottom: 1px solid var(--hairline);
+  background: rgba(251, 252, 253, 0.92);
+  backdrop-filter: blur(8px);
 }
 
-.logo-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+.site-header .container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.hero p {
-  font-size: 1.3rem;
-  margin-bottom: 30px;
-  opacity: 0.9;
-  animation: slideInUp 1s ease-out 0.2s both;
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
-.cta-button {
-  display: inline-block;
-  background: var(--gradient-yellow);
-  color: var(--primary-blue);
-  padding: 15px 40px;
-  text-decoration: none;
-  border-radius: var(--border-radius-large);
+.site-nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.site-nav a:hover {
+  color: var(--text);
+}
+
+.site-nav .btn {
+  background: var(--ink);
+  color: #fff;
+}
+
+.site-nav .btn:hover {
+  background: var(--brand-blue);
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 104px 0 96px;
+  border-bottom: 1px solid var(--hairline);
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-copy {
+  grid-column: span 7;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.hero h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+  letter-spacing: -2.4px;
+  line-height: 1.04;
+  text-wrap: pretty;
+}
+
+.hero-sub {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 520px;
+  text-wrap: pretty;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.hero-trust {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 14px;
+}
+
+.hero-trust li {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  gap: 7px;
+}
+
+.hero-aside {
+  grid-column: span 5;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ===== TARJETA "CÓMO TRABAJAMOS" ===== */
+.process {
+  padding: 26px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.process h2 {
+  font-size: 0.75rem;
   font-weight: 600;
-  font-size: 1.1rem;
-  transition: var(--transition);
-  box-shadow: 0 10px 30px rgba(251, 191, 36, 0.3);
-  animation: slideInUp 1s ease-out 0.4s both;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--text-subtle);
 }
 
-.cta-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(251, 191, 36, 0.4);
+.process ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.process li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.process li + li {
+  border-top: 1px solid var(--hairline);
+  padding-top: 16px;
+}
+
+.process-num {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: var(--surface-chip);
+  color: var(--brand-blue);
+  font-size: 0.75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.process p {
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/* ===== TARJETA DE TELÉFONO DEL HERO ===== */
+.hero-phone {
+  background: var(--ink);
+  border-radius: var(--radius-card);
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: #fff;
+  transition: background-color var(--transition);
+}
+
+.hero-phone:hover {
+  background: #16265a;
+  color: #fff;
+}
+
+.hero-phone small {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--on-dark-subtle);
+  margin-bottom: 3px;
+}
+
+.hero-phone strong {
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.hero-phone svg {
+  stroke: var(--amber);
 }
 
 /* ===== RESPONSIVE HERO ===== */
-@media (max-width: 768px) {
-  .hero p {
-    font-size: 1.1rem;
+@media (max-width: 900px) {
+  .site-header {
+    height: 60px;
   }
 
-  .logo-text {
-    font-size: 2rem;
+  .site-nav a:not(.btn) {
+    display: none;
   }
 
-  .logo-image {
-    max-width: 150px;
+  .hero {
+    padding: 44px 0 40px;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-copy,
+  .hero-aside {
+    grid-column: auto;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+    letter-spacing: -1.5px;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-trust {
+    flex-direction: column;
+    gap: 9px;
   }
 }

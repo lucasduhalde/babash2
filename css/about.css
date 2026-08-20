@@ -1,57 +1,90 @@
-/* ===== ABOUT SECTION ===== */
+/* ===== EQUIPO ===== */
 .about {
   padding: var(--section-padding);
-  background: var(--white);
+}
+
+.about .container {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 32px;
+  align-items: start;
+}
+
+.about-intro {
+  grid-column: span 4;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .about-content {
+  grid-column: span 8;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
 }
 
 .profile-card {
-  text-align: center;
-  padding: 40px;
-  background: var(--bg-light);
-  border-radius: var(--border-radius);
-  transition: var(--transition);
-}
-
-.profile-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px var(--shadow-light);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .profile-avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  background: var(--gradient-blue);
-  margin: 0 auto 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-card);
+  background: var(--surface-chip);
+  color: var(--brand-blue);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
-  color: var(--white);
 }
 
 .profile-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: var(--text-dark);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  margin-bottom: 4px;
+}
+
+.profile-role {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--amber-dark);
 }
 
 .profile-card p {
-  color: var(--text-light);
-  line-height: 1.6;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--text-muted);
 }
 
-/* ===== RESPONSIVE ABOUT ===== */
-@media (max-width: 768px) {
+/* ===== RESPONSIVE EQUIPO ===== */
+@media (max-width: 900px) {
+  .about .container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about-intro,
+  .about-content {
+    grid-column: auto;
+  }
+
   .about-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 14px;
+  }
+
+  .profile-card {
+    padding: 24px;
+    gap: 12px;
   }
 }
