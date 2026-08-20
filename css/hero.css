@@ -69,14 +69,6 @@
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
-.hero h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-  font-weight: 700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  animation: slideInUp 1s ease-out;
-}
-
 .hero p {
   font-size: 1.3rem;
   margin-bottom: 30px;
@@ -105,10 +97,6 @@
 
 /* ===== RESPONSIVE HERO ===== */
 @media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-
   .hero p {
     font-size: 1.1rem;
   }

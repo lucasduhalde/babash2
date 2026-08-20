@@ -1,13 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CL">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Babash - Asesoría Legal y Estratégica para emprendedoresas</title>
+    <title>Babash | Asesoría Legal y Estratégica para Emprendedores</title>
+    <meta
+      name="description"
+      content="Asesoría legal y estratégica en Chile para startups, artistas e industrias creativas: constitución de sociedades, contratos, marcas y levantamiento de capital."
+    />
+    <link rel="canonical" href="https://babash.cl/" />
 
-    <!-- ===== FAVICON MEJORADO ===== -->
     <!-- ===== FAVICON ACTUAL ===== -->
     <link rel="icon" type="image/png" href="img/Ventana.png" />
+
+    <!-- ===== OPEN GRAPH (WhatsApp, Facebook, LinkedIn) ===== -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Babash" />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:url" content="https://babash.cl/" />
+    <meta
+      property="og:title"
+      content="Babash | Asesoría Legal y Estratégica para Emprendedores"
+    />
+    <meta
+      property="og:description"
+      content="Asesoría legal y estratégica en Chile para startups, artistas e industrias creativas: constitución de sociedades, contratos, marcas y levantamiento de capital."
+    />
+    <meta property="og:image" content="https://babash.cl/img/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Babash - Asesoría legal y estratégica para emprendedores"
+    />
+
+    <!-- ===== TWITTER / X ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Babash | Asesoría Legal y Estratégica para Emprendedores"
+    />
+    <meta
+      name="twitter:description"
+      content="Asesoría legal y estratégica en Chile para startups, artistas e industrias creativas: constitución de sociedades, contratos, marcas y levantamiento de capital."
+    />
+    <meta name="twitter:image" content="https://babash.cl/img/og.png" />
 
     <!-- ===== CSS MODULAR ===== -->
     <link rel="stylesheet" href="css/main.css" />
@@ -22,11 +59,10 @@
     <!-- ===== HERO SECTION ===== -->
     <section class="hero gradient-bg">
       <div class="container">
-        <div class="logo-text">
+        <h1 class="logo-text">
           <span class="ba">BA</span><span class="bash">BAS</span
           ><span class="h-blue">H</span>
-        </div>
-        <!-- <h1>BABASH</h1> -->
+        </h1>
         <p>
           Somos dos jóvenes apasionados por el derecho y la tecnología,
           dispuestos a enfrentar cualquier desafío
@@ -195,6 +231,50 @@
         </p>
       </div>
     </footer>
+
+    <!-- ===== DATOS ESTRUCTURADOS (Google) ===== -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Babash",
+        "url": "https://babash.cl/",
+        "image": "https://babash.cl/img/og.png",
+        "description": "Asesoría legal y estratégica en Chile para startups, artistas e industrias creativas: constitución de sociedades, contratos, marcas y levantamiento de capital.",
+        "telephone": "+56933242695",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Chile"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Constitución y Desarrollo de Sociedades"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Asesoría Legal Integral"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Financiamiento y Levantamiento de Capital"
+              }
+            }
+          ]
+        }
+      }
+    </script>
 
     <!-- ===== JAVASCRIPT MODULAR ===== -->
     <script src="js/main.js"></script>
