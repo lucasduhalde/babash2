@@ -13,13 +13,15 @@
     <!-- ===== FAVICON (monograma bb) ===== -->
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
 
-    <!-- ===== TIPOGRAFÍA ===== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ===== TIPOGRAFÍA (propia, ver fonts/README.md) ===== -->
     <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="preload"
+      href="fonts/plus-jakarta-sans-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
+    <meta name="theme-color" content="#0f1b3d" />
 
     <!-- ===== OPEN GRAPH (WhatsApp, Facebook, LinkedIn) ===== -->
     <meta property="og:type" content="website" />
@@ -643,16 +645,48 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "LegalService",
+        "@id": "https://babash.cl/#babash",
         "name": "Babash",
         "url": "https://babash.cl/",
+        "logo": "https://babash.cl/img/favicon.svg",
         "image": "https://babash.cl/img/og.png",
         "description": "Asesoría legal y estratégica en Chile para startups, artistas e industrias creativas: constitución de sociedades, contratos, marcas y levantamiento de capital.",
         "telephone": "+56933242695",
+        "priceRange": "$$",
         "areaServed": {
           "@type": "Country",
           "name": "Chile"
         },
+        "knowsLanguage": "es-CL",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "09:00",
+            "closes": "18:00"
+          }
+        ],
+        "founder": [
+          {
+            "@type": "Person",
+            "name": "Nicolás Ortiz",
+            "jobTitle": "Abogado"
+          },
+          {
+            "@type": "Person",
+            "name": "Lucas Duhalde",
+            "jobTitle": "Ingeniero Civil Industrial"
+          }
+        ],
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
           "name": "Servicios",
@@ -661,21 +695,24 @@
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Constitución y Desarrollo de Sociedades"
+                "name": "Constitución y Desarrollo de Sociedades",
+                "description": "Constitución de SpA y sociedades de responsabilidad limitada, pactos de accionistas y estructuras de vesting."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Asesoría Legal Integral"
+                "name": "Asesoría Legal Integral",
+                "description": "Contratos comerciales, registro de marcas ante INAPI, propiedad intelectual y cumplimiento normativo."
               }
             },
             {
               "@type": "Offer",
               "itemOffered": {
                 "@type": "Service",
-                "name": "Financiamiento y Levantamiento de Capital"
+                "name": "Financiamiento y Levantamiento de Capital",
+                "description": "Pitch deck, due diligence, estructuración de rondas de inversión y postulación a fondos concursables."
               }
             }
           ]
